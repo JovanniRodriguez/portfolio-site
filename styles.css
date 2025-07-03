@@ -1,0 +1,119 @@
+body {
+    background-color: DBFF00;
+    animation: changeBGColor 50s linear infinite
+}
+
+#nameHeader1 {
+    font-size: 30px;
+    font-family: karantina;
+    letter-spacing: 20px;
+}
+
+#nameHeader2 {
+    writing-mode: sideways-lr;
+    font-size: 35px;
+    font-family: karantina;
+    letter-spacing: 20px;
+}
+
+.circle {
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+
+.circleContainer {
+    animation: rotateCircles 5s linear infinite;
+    width: 100px;
+    height: 100px;
+    transform-origin: center;
+}
+
+[class="circle 1"] {
+    transition: transform 0.5s ease;
+}
+
+[class="circle 2"] {
+    top: 400px;
+    transition: transform 0.5s ease;
+}
+
+[class="circle 3"] {
+    top: 300px;
+    left: 400px;
+    transition: transform 0.5s ease;
+}
+
+[class="circle 4"] {
+    top: 300px;
+    left: 600px;
+    transition: transform 0.5s ease;
+}
+
+[class="circle 1"]:hover {
+    transform: translateY(-100px);
+}
+
+[class="circle 2"]:hover {
+    transform: translateY(100px);
+}
+
+[class="circle 3"]:hover {
+    transform: translateX(-100px);
+}
+
+[class="circle 4"]:hover {
+    transform: translateX(100px);
+}
+
+@keyframes changeBGColor {
+    0% {
+        background-color: #DBFF00;
+    }
+
+    14% {
+        background-color: #FF0000;
+    }
+
+    /* Red */
+    28% {
+        background-color: #0000FF;
+    }
+
+    /* Blue */
+    42% {
+        background-color: #00FFFF;
+    }
+
+    /* Cyan */
+    56% {
+        background-color: #FF00FF;
+    }
+
+    /* Magenta */
+    70% {
+        background-color: #FFA500;
+    }
+
+    /* Orange */
+    84% {
+        background-color: #800080;
+    }
+
+    /* Purple */
+    100% {
+        background-color: #DBFF00;
+    }
+
+    /* Back to your neon */
+}
+
+/* @keyframes rotateCircles {
+    from { transform: rotate(0deg)}
+    to   { transform: rotate(360deg)}
+} */
