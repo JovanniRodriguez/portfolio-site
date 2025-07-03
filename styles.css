@@ -1,6 +1,8 @@
 body {
     background-color: DBFF00;
-    animation: changeBGColor 50s linear infinite
+    animation: changeBGColor 50s linear infinite;
+    overflow: hidden;
+    margin: 0;
 }
 
 #nameHeader1 {
@@ -22,9 +24,9 @@ body {
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    position: absolute;
-    left: 500px;
-    top: 200px;
+    position: relative;
+    /* left: 500px;
+    top: 200px; */
 }
 
 .circleContainer {
@@ -32,27 +34,42 @@ body {
     width: 100px;
     height: 100px;
     transform-origin: center;
+    position: absolute;
+    left: 800px;
+    top: 400px;
 }
 
 [class="circle 1"] {
     transition: transform 0.5s ease;
+    position: relative;
+    left: -100px;
+    top:-200px;
 }
 
 [class="circle 2"] {
-    top: 400px;
+    /* top: 400px; */
     transition: transform 0.5s ease;
+    position: relative;
+    left: -100px;
+    top:-310px;
 }
 
 [class="circle 3"] {
-    top: 300px;
-    left: 400px;
+    /* top: 300px;
+    left: 400px; */
     transition: transform 0.5s ease;
+    position: relative;
+    left: -200px;
+    top:-720px;
 }
 
 [class="circle 4"] {
-    top: 300px;
-    left: 600px;
+    /* top: 300px;
+    left: 600px; */
     transition: transform 0.5s ease;
+    position: relative;
+    left: -5px;
+    top:-1020px;
 }
 
 [class="circle 1"]:hover {
@@ -69,6 +86,11 @@ body {
 
 [class="circle 4"]:hover {
     transform: translateX(100px);
+}
+
+
+.headshotContainer{
+    background-image: url(assets/headshot-cap-gown.jpg);
 }
 
 @keyframes changeBGColor {
@@ -113,7 +135,7 @@ body {
     /* Back to your neon */
 }
 
-/* @keyframes rotateCircles {
+@keyframes rotateCircles {
     from { transform: rotate(0deg)}
     to   { transform: rotate(360deg)}
-} */
+}
