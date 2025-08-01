@@ -3,8 +3,11 @@
     <div class="row h-100">
 
       <!--start carousel component-->
-      <div class="col h-100" id="left-carousel-col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        nostrum sapiente natus quas fuga labore voluptatum at eos qui delectus?</div>
+      <div class="col d-flex h-100 justify-content-center align-items-center text-center" id="left-carousel-col">
+        <TitleSlide>
+
+        </TitleSlide>
+      </div>
       <!--end carousel component-->
 
       <!--start info col-->
@@ -50,8 +53,12 @@
 </template>
 
 <script>
+import TitleSlide from './Carousel.vue'
 export default {
   name: 'Home',
+  components: {
+    TitleSlide,
+  }
 
 }
 </script>
