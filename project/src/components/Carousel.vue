@@ -7,7 +7,7 @@
                 <!--Title card-->
                 <div class="carousel-item active">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body d-flex justify-content-center align-items-center">
                             <div class="row">
                                 <div class="col">
                                     <h1 class="display-1">Web & Software <br> Developer</h1>
@@ -92,16 +92,16 @@
                             <h1 class="display-1 text-start mb-5">Education</h1>
 
                             <div class="container mx-5">
-                                <h1 class="text-start fw-bold">Bachelor of Science</h1>
-                                <h3 class="text-start ms-5">in Computer Science</h3>
-                                <h3 class="text-start ms-5">Florida Southern College</h3>
-                                <h3 class="text-start ms-5">Aug 2022 - May 2025</h3>
+                                <h1 class="exp-bulletpoint text-start fw-bold">Bachelor of Science</h1>
+                                <h3 class="exp-bulletpoint text-start ms-5">in Computer Science</h3>
+                                <h3 class="exp-bulletpoint text-start ms-5">Florida Southern College</h3>
+                                <h3 class="exp-bulletpoint text-start ms-5">Aug 2022 - May 2025</h3>
                             </div>
 
                             <div class="container mt-5 mx-5">
-                                <h1 class="text-start fw-bold">Associate of Arts</h1>
-                                <h3 class="text-start ms-5">Hillsborough Community College</h3>
-                                <h3 class="text-start ms-5">May 2017 - Dec 2021</h3>
+                                <h1 class="exp-bulletpoint text-start fw-bold">Associate of Arts</h1>
+                                <h3 class="exp-bulletpoint text-start ms-5">Hillsborough Community College</h3>
+                                <h3 class="exp-bulletpoint text-start ms-5">May 2017 - Dec 2021</h3>
                             </div>
                         </div>
                     </div>
@@ -157,8 +157,11 @@ export default {
 </script>
 
 <style scoped>
+.card {
+    border: none;
+}
 .card-body{
-    height: 800px;
+    min-height: 800px;
 }
 .nav-arrow-right-img {
     width: 70px;
@@ -186,12 +189,13 @@ export default {
 }
 
 .repo-link {
+    display: inline-block;
     opacity: 10%;
     text-decoration: underline;
     color: black;
 }
 .repo-link:hover {
+    
     opacity: 100%;
-    transition: 
 }
 </style>

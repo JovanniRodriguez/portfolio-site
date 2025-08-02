@@ -26,7 +26,7 @@
 
         <div class="row">
           <div class="col m-5">
-            <h1>Jovani Rodriguez</h1>
+            <h1 class="full-name-h1">Jovani Rodriguez</h1>
           </div>
           <div class="row">
             <div class="col">
@@ -88,6 +88,7 @@ export default {
 .contact-icon {
   width: 70px !important;
   cursor: pointer;
+  -webkit-user-drag: none;
 }
 
 .contact-icon:hover {
@@ -112,5 +113,11 @@ export default {
     height: fit-content;
     background-color: transparent;
     cursor:auto;
+}
+.full-name-h1 {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -ms-touch-select: none;
 }
 </style>
