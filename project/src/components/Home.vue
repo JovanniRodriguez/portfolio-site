@@ -3,11 +3,21 @@
     <div class="row h-100">
 
       <!--start carousel component-->
-      <div class="col d-flex h-100 justify-content-center align-items-center text-center" id="left-carousel-col">
+      <div class="col d-flex flex-column h-100 justify-content-center align-items-center text-center" id="left-carousel-col">
         <TitleSlide>
 
         </TitleSlide>
+        <div class="row">
+          <div class="col">
+            <button role="button" data-bs-slide="next"
+            data-bs-target="#carouselControls" id="nextSlideButton">
+            	<img class="nav-arrow-right-img" src="/icons/nav-arrow-right-icon.png" alt="next">
+            </button>
+          </div>
+        </div>
       </div>
+      
+      
       <!--end carousel component-->
 
       <!--start info col-->
@@ -83,5 +93,24 @@ export default {
 .contact-icon:hover {
   transform: scale(1.3);
   transition: transform 0.5s ease;
+}
+
+.nav-arrow-right-img {
+    width: 70px;
+    cursor: pointer;
+}
+
+.nav-arrow-right-img:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+}
+
+#nextSlideButton {
+    border: none;
+    border-radius: 40%;
+    width: auto;
+    height: fit-content;
+    background-color: transparent;
+    cursor:auto;
 }
 </style>
